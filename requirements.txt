@@ -1,0 +1,23 @@
+# Techculture.ai Service Assistant — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core AI / Gemini ──────────────────────────────────────
+google-generativeai>=0.7.0
+
+# ── Vector Store ─────────────────────────────────────────
+chromadb>=0.5.0
+
+# ── API Framework ─────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+
+# ── Streamlit UI ──────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Environment / Config ──────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Utilities ─────────────────────────────────────────────
+httpx>=0.27.0        # used by fastapi test client
+python-multipart>=0.0.9   # needed for form uploads in fastapi

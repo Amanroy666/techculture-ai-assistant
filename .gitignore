@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────────────────────
+# .gitignore for Techculture.ai Service Assistant
+# ─────────────────────────────────────────────────────────────
+
+# NEVER commit this — contains your secret API key
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.pytest_cache/
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# ChromaDB — local vector store data (rebuild from docs instead)
+chroma_db/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Test output
+htmlcov/
+.coverage
+coverage.xml
+
+# Logs
+*.log
+logs/
