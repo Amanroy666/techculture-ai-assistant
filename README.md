@@ -61,7 +61,7 @@ Documents (docs/)
 User Query
     ↓ agent.py — Sentiment analysis (always) + pricing intent detection
     ↓ embeddings.py — Embed query, semantic search top-5 chunks
-    ↓ rag_pipeline.py — Build grounded prompt + call Gemini 1.5 Flash
+    ↓ rag_pipeline.py — Build grounded prompt + call Groq Llama 3.1 (llama-3.1-8b-instant)
     ↓ Response — Answer + source citations + tool outputs
 ```
 
@@ -89,7 +89,7 @@ User Query
 
 | Component | Technology | Why |
 |-----------|-----------|-----|
-| LLM | Google Gemini 1.5 Flash | Fast, free tier, strong reasoning |
+| LLM | Google Groq Llama 3.1 (llama-3.1-8b-instant) | Fast, free tier, strong reasoning |
 | Embeddings | Gemini `embedding-001` | Same API, good multilingual quality |
 | Vector DB | ChromaDB | Local, persistent, no infra needed |
 | API | FastAPI | Modern Python, async, auto-docs |
