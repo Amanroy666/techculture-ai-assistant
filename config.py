@@ -25,7 +25,7 @@ if not GEMINI_API_KEY:
 
 # Gemini model names
 GEMINI_GENERATION_MODEL = "gemini-1.5-flash"       # used for answer generation
-GEMINI_EMBEDDING_MODEL = "models/embedding-001"     # used for vector embeddings
+# Embeddings now use local ChromaDB DefaultEmbeddingFunction (all-MiniLM-L6-v2)
 
 
 # ─────────────────────────────────────────────
